@@ -1,0 +1,184 @@
+@import "libs"
+@import "base"
+
+
+.header
+	position: fixed
+	right: 0
+	left: 0
+	padding: 15px 0
+	transition: all .3s
+	z-index: 1001
+
+	&--active, &--menu
+		padding: 5px 0
+
+	&__container
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__logo
+		color: #fff
+		font-size: 36px
+	
+.nav
+	ul
+		display: flex
+		justify-content: space-between
+
+	li
+		margin-right: 55px
+		&:last-child
+			margin-right: 0
+
+	a
+		position: relative
+		z-index: 1
+		text-transform: uppercase
+
+		&::before
+			content: ''
+			width: 0
+			transform: scale(0)
+			transition: all .3s
+			position: absolute
+			bottom: 0
+			width: 100%
+			height: 1px
+			background-color: $accent
+			z-index: -1
+
+		&:hover,
+		&:focus
+			color: $accent
+			text-decoration: none
+			&::before
+				transform: scale(1)
+
+
+.main
+	background-image: url(../img/bg.png)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+
+
+.page--form
+	padding: 110px 0
+
+
+	h3
+		text-transform: uppercase
+		color: #fff
+		font-size: 24px
+		text-align: right
+		margin-bottom: 30px
+
+		span
+			font-weight: 400
+
+	p
+		margin-bottom: 25px
+		color: #fff
+		text-align: center
+		line-height: 1
+
+	&__form
+		box-shadow: 0 0 38px rgba(120, 213, 0, 0.51)
+		border-radius: 5px
+		background-color: rgba(#19113e, 0.2)
+		padding: 30px
+
+		&_line
+			position: relative
+			margin-bottom: 20px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 15px
+				width: 8px
+				height: 12px
+				background: red
+
+			&::after
+				content: ''
+				position: absolute
+				top: 5px
+				left: 15px
+				border-bottom: 4px solid #fff
+				border-left: 4px solid transparent
+				border-right: 4px solid transparent
+				border-top: 4px solid transparent
+
+			&--last
+				margin-bottom: 50px
+
+		&_btn
+			display: flex
+			justify-content: space-between
+			margin-bottom: 30px
+
+		&_link
+			display: flex
+			justify-content: space-between
+			align-items: center
+			line-height: 1
+
+			a
+				color: #fff
+				&:hover,
+				&:focus
+					color: #fff
+					text-decoration: underline
+
+		label
+			position: relative
+			padding-left: 25px
+			color: #fff
+			cursor: pointer
+			margin-bottom: 0
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+
+			&::before
+				width: 15px
+				height: 15px
+				border-radius: 3px
+				border: 1px solid #ffffff
+
+			&::after
+				width: 9px
+				height: 9px
+				border-radius: 3px
+				border: 1px solid #ffffff
+				background: #fff
+				left: 3px
+				top: 3px
+				transition: all .6s
+
+		input[type="checkbox"]
+			display: none
+
+		input[type="checkbox"]:checked + label::after
+			transform: scale(1)
+
+		input[type="checkbox"] + label::after
+			transform: scale(0)
+
+
+
+
+.footer
+	height: 1000px
+
+
+@import "page"
+@import "media" // Always at the end
