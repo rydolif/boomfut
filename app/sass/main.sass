@@ -273,7 +273,30 @@
 	&__logo
 		&::before
 			display: none
+	
+	&__up
+		position: absolute
+		right: 0
+		top: -20px
+		width: 26px
+		height: 26px
+		background-color: #ffffff
 
+		&::before
+			content: ''
+			position: absolute
+			top: 60%
+			left: 50%
+			width: 10px
+			height: 10px
+			transform: translate(-50%, -50%) rotate(45deg)
+			border-top: 3px solid $dark
+			border-left: 3px solid $dark
+
+		a
+			display: block
+			width: 100%
+			height: 100%
 
 
 @import "page"
