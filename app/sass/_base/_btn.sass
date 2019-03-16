@@ -1,27 +1,48 @@
 .btn
 	position: relative
 	display: inline-block
-	height: 50px
-	border: none
+	height: 40px
+	border: 1px solid #fff
 	outline: none
 	padding: 0 30px
-	border-radius: 4px
-	background: $accent
+	background: transparent
 	text-align: center
 	text-transform: uppercase
-	font-size: 12px
-	color: #3f7a05
-	line-height: 50px
-	font-weight: 700
+	color: #fff
+	line-height: 40px
 	letter-spacing: .2px
+	font-size: 18px
+	transition: all .6s
+	max-width: 310px
+	margin: 0 auto
 
 	&:hover,
 	&:focus
+		background: $red
 		outline: none
-		border: none
+		border: 1px solid $red
 		text-decoration: none
 		cursor: pointer
-		transition: all .3s
 		box-shadow: 0 5px 10px rgba($text, .4)
-		color: #3f7a05
+		color: #fff
+
+	&--red
+
+	&--dark
+		font-size: 16px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		background: $dark
+		border: 1px solid $dark
+		margin-bottom: 20px
+
+	&--green
+		font-size: 16px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		background: #2ab200
+		border: 1px solid #2ab200
+		margin-bottom: 20px
 
