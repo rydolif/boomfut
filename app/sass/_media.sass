@@ -1,6 +1,5 @@
 
 @media only screen and (max-width : 1200px)
-
 	.nav
 		li
 			margin-right: 20px
@@ -10,6 +9,29 @@
 	.packs,
 	.points
 		padding: 100px 0 50px
+	
+	.profile
+		&__content
+			padding: 20px 15px
+
+		&__header
+			padding-bottom: 20px
+
+			&_info
+				width: 55%
+
+				h3,
+				p
+					margin-bottom: 5px
+
+			&_btn
+				width: 40%
+
+			&_avatar
+				margin-right: 15px
+
+		&__link
+			padding: 20px 0
 
 		
 	.points
@@ -118,8 +140,6 @@
 	h1
 		margin-bottom: 10px
 
-	.faq 
-		background-size: cover
 
 	.packs
 		h2
@@ -165,11 +185,63 @@
 	.soc
 		background: $blue
 
+	.faq,
+	.profile
+		background-size: cover
+
+	.profile
+		&__content
+			padding: 0
+
+		&__wrap
+			background: #fff
+			padding: 10px
+
+		&__header
+			padding: 10px
+
+			&_info
+				font-size: 12px
+
+		&__table
+			td
+				font-size: 12px
+
+			th
+				font-size: 10px
+
+	.btn
+		&--profile
+			padding-left: 10px
+
+		&--link
+			width: 210px
+
 
 @media only screen and (max-width : 480px)
 	.btn
 		padding: 0 20px
 		font-size: 14px
+
+		&--link
+			width: 100%
+			margin: 0 auto 10px
+
+	.profile
+
+		&__header
+			flex-wrap: wrap
+
+			&_info,
+			&_btn
+				width: 100%
+
+			&_info
+				margin-bottom: 15px
+
+		&__link
+			flex-wrap: wrap
+			padding-top: 0
 
 	.faq
 		&__item

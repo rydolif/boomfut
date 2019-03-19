@@ -26,8 +26,6 @@
 		box-shadow: 0 5px 10px rgba($text, .4)
 		color: #fff
 
-	&--red
-
 	&--dark
 		font-size: 16px
 		display: flex
@@ -45,4 +43,41 @@
 		background: #2ab200
 		border: 1px solid #2ab200
 		margin-bottom: 20px
+	
+
+	&--profile
+		margin-bottom: 20px
+		width: 100%
+		text-align: left
+
+		img
+			position: absolute
+			right: 10px
+			top: 50%
+			transform: translate(0, -50%)
+			width: 22px
+			height: 22px
+
+	&--link
+		width: 230px
+		border: 1px solid $dark
+		color: $dark
+		padding: 0
+		margin: 0
+		font-size: 16px
+		font-weight: 500
+
+		&:hover,
+		&:focus
+			background: $dark
+			border: 1px solid $dark
+
+
+		img
+			position: absolute
+			right: 10px
+			top: 50%
+			transform: translate(0, -50%)
+			width: 22px
+			height: 22px
 
