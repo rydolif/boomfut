@@ -1,1 +1,92 @@
 .reviews
+	padding: 20px 0 70px
+	background-image: url(../img/bg-min.jpg)
+	background-size: 100% 250px
+	background-position: top center
+
+
+	h2
+		font-size: 30px
+		font-weight: 500
+		text-transform: uppercase
+		color: $dark
+		margin-bottom: 40px
+	
+
+	h3
+		font-weight: 700
+		font-size: 14px
+		text-transform: uppercase
+		line-height: 1.2
+
+	time
+		display: block
+		margin-bottom: 15px
+		line-height: 1
+
+	&__form
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 30px
+		background: #fff
+		box-shadow: 0 0 24px rgba(0, 0, 0, 0.34)
+		margin-bottom: 40px
+
+		textarea,
+		input
+			color: #0e204e
+			background: #eaeffd
+
+		textarea
+			height: 220px
+			resize: none
+			padding: 15px
+
+		input
+			margin-bottom: 20px
+
+		&_textarea
+			width: 64%
+
+			.btn
+				display: none
+
+		&_line
+			width: 33%
+
+		&_star
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-bottom: 35px
+			font-size: 16px
+	
+
+	&__item
+		position: relative
+		padding: 40px 50px 40px 110px
+		box-shadow: 0 0 16px rgba(54, 74, 220, 0.35)
+		background: #fff
+		margin-bottom: 30px
+		color: $dark
+
+		&::before
+			content: '“'
+			position: absolute
+			top: 30px
+			left: 45px
+			color: #0e204e
+			font-family: Montserrat
+			font-size: 76px
+			font-weight: 500
+			line-height: 1
+			text-transform: uppercase
+
+		p
+			margin-bottom: 15px
+			line-height: 1.3
+
+
+
+

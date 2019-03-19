@@ -140,7 +140,6 @@
 	h1
 		margin-bottom: 10px
 
-
 	.packs
 		h2
 			margin-bottom: 30px
@@ -153,6 +152,32 @@
 
 		&__item
 			padding: 20px
+
+	.reviews
+		h2
+			margin-bottom: 20px
+
+		&__form
+			padding: 15px
+			margin-bottom: 20px
+
+			&_textarea
+				width: 48%
+
+			&_line
+				width: 48%
+
+		&__item
+			padding: 15px 15px 15px 40px
+
+			&::before
+				font-size: 50px
+				left: 10px
+				top: 10px
+
+			p,
+			time
+				margin-bottom: 10px
 
 
 @media only screen and (max-width : 576px)
@@ -219,6 +244,33 @@
 
 
 @media only screen and (max-width : 480px)
+	.reviews
+		h1,
+		h2
+			font-size: 24px
+
+		&__form
+			flex-direction: column-reverse
+
+			&_line,
+			&_textarea
+				width: 100%
+
+			&_line
+				.btn
+					display: none
+			
+			&_textarea
+
+				textarea
+					margin-bottom: 15px
+
+				.btn
+					display: block
+
+			&_star
+				margin-bottom: 15px
+
 	.btn
 		padding: 0 20px
 		font-size: 14px
