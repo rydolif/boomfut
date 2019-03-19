@@ -1,2 +1,124 @@
 .faq
-	
+	padding: 20px 0 70px
+	background-image: url(../img/bg-min.jpg)
+	background-size: contain
+	background-position: top center
+
+	h3
+		font-size: 16px
+		font-weight: 700
+		color: $dark
+
+	&__container
+		width: 86%
+		margin: 0 auto
+
+	&__content
+		position: relative
+
+		&::before
+			content: ''
+			position: absolute
+			right: 10px
+			left: 10px
+			top: 0
+			bottom: 0
+			height: 100%
+			background: #fff
+			box-shadow: 0 0 24px rgba(0, 0, 0, 0.34)
+
+	&__item
+		position: relative
+		padding: 50px 55px
+		transition: all .6s
+		width: 95%
+		margin: 0 auto
+
+		&::before
+			content: ''
+			position: absolute
+			right: 0
+			left: 0
+			bottom: 0
+			width: 90%
+			height: 1px
+			margin: 0 auto
+			background: #e2e2e2
+
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			top: 0
+			height: 100%
+			width: 5px
+			background: $red
+			box-shadow: 0 0 16px rgba(227, 0, 90, 0.63)
+			transition: all .6s
+			opacity: 0
+
+		&_header
+			position: relative
+			padding-right: 90px
+			cursor: pointer
+
+			span
+				position: absolute
+				right: 0
+				top: 0
+				display: block
+				width: 30px
+				height: 30px
+				border: 1px solid $dark
+				transition: all .6s
+
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+					background: $dark
+					transition: all .6s
+
+				&::before
+					width: 10px
+					height: 2px
+
+				&::after
+					height: 10px
+					width: 2px
+
+		&_content
+			padding-top: 30px
+			text-align: right
+			padding-right: 80px	
+
+
+		&--active
+			box-shadow: 0 0 24px rgba(59, 63, 189, 0.34)
+			width: 100%
+			background: #fff
+			padding-right: 80px
+
+			&::before
+				display: none
+			
+			&::after
+				opacity: 1
+
+
+			span
+				box-shadow: 0 0 16px rgba(227, 0, 90, 0.63)
+				border-color: #fff
+
+				&::before,
+				&::after
+					background: $red
+
+				&::after
+					transform: translate(-50%, -50%) rotate(90deg)
+
+
