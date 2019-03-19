@@ -1,9 +1,6 @@
 @import "libs"
 @import "base"
 
-.app
-	margin-top: 100px
-	height: 1000px
 
 .header
 	position: fixed
@@ -309,6 +306,54 @@
 			display: block
 			width: 100%
 			height: 100%
+
+.pagination
+	margin-top: 35px
+	display: flex
+	justify-content: flex-end
+
+	&__number
+		line-height: 30px
+		color: $dark
+		margin-right: 25px
+
+		b
+			font-size: 24px
+
+
+	&__button
+		display: flex
+
+		a
+			position: relative
+			display: block
+			width: 30px
+			height: 30px
+			border: 1px solid $dark
+			background: none
+			margin-top: 0
+			transition: all .6s
+
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				width: 10px
+				height: 10px
+				border-top: 2px solid $dark
+				border-left: 2px solid $dark
+
+			&:last-child
+
+				&::before
+					transform: translate(-75%, -50%) rotate(135deg)
+
+			&:first-child
+				margin-right: 10px
+
+				&::before
+					transform: translate(-25%, -50%) rotate(-45deg)
 
 
 @import "page"
