@@ -1,6 +1,6 @@
 .opened
 	min-height: 100vh
-	padding: 200px 0
+	padding: 100px 0 50px
 	background-image: url(../img/page-form-bg.jpg)
 
 	h2
@@ -45,7 +45,6 @@
 
 	&__list
 		display: flex
-		justify-content: space-between
 		flex-wrap: wrap
 
 	&__item
@@ -56,7 +55,8 @@
 		transition: all 1s
 
 		&:hover
-			transform: rotateY(360deg)
+			.opened__item_img
+				transform: rotateY(360deg)
 
 		p
 			color: #fff
@@ -68,10 +68,5 @@
 		&_img
 			width: 164px
 			height: 261px
-
-
-
-
-
-
+			transition: all 1s
 

@@ -1,0 +1,74 @@
+.club
+	&__content
+		padding: 25px 15px 15px
+
+	&__item
+		position: relative
+		width: 12.5%
+		padding-bottom: 15px
+		margin-bottom: 15px
+		transition: all .6s
+		z-index: 1
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			opacity: 0
+			transition: all .6s
+			
+		&::before
+			bottom: 0
+			right: 0
+			left: 0
+			width: 100%
+			height: 5px
+			box-shadow: 0 -3px 16px #ffed8f
+			background-color: #ccb660
+			z-index: -1
+			
+		&::after
+			content: ''
+			position: absolute
+			right: 0
+			top: 0
+			left: 0
+			bottom: 0
+			opacity: 0
+			background-image: linear-gradient(to top, rgba(#fff, .8) , rgba(#fff, .0))
+			z-index: -2
+
+
+		&:hover,
+		&:focus
+
+			&::before,
+			&::after
+				opacity: 1
+
+			p,
+			a
+				opacity: 1
+
+		&_img
+			width: 110px
+			height: 174px
+			margin-bottom: 15px
+
+		p,
+		a
+			opacity: 0
+			transition: all .6s
+
+		.btn
+			font-size: 14px
+			width: 110px
+			padding: 0 10px
+			height: 30px
+			line-height: 30px
+	
+	&__list
+		justify-content: space-around
+
+
+
