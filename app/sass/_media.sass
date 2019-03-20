@@ -1,5 +1,8 @@
 
 @media only screen and (max-width : 1200px)
+	.field
+		background-position: 49% center
+
 	.club
 		&__item
 			width: 14.2%
@@ -34,6 +37,45 @@
 
 
 @media only screen and (max-width : 992px)
+	.field
+		&__item
+
+			&--top
+				&:nth-child(1)
+					left: 32%
+
+
+				&:nth-child(3)
+					left: 68%
+
+			&--center
+				&:nth-child(1)
+					left: 14%
+
+				&:nth-child(3)
+					left: 86%
+
+			&--bottom
+				&:nth-child(1)
+					left: 10%
+					top: 55px
+
+				&:nth-child(2)
+					left: 30%
+					top: 85px
+
+				&:nth-child(3)
+					left: 50%
+					top: 130px
+
+				&:nth-child(4)
+					left: 70%
+					top: 85px
+
+				&:nth-child(5)
+					left: 90%
+					top: 55px
+
 	.opened
 		&__content
 			padding: 15px
@@ -196,6 +238,43 @@
 
 
 @media only screen and (max-width : 767px)
+	.field
+		padding-bottom: 50px
+		background-position: 49% center
+
+		&__item
+			width: 85px
+			height: 135px
+
+			&--center
+				&:nth-child(1)
+					left: 14%
+					top: 30px
+
+				&:nth-child(3)
+					left: 86%
+					top: 30px
+
+			&--bottom
+				&:nth-child(1)
+					left: 10%
+					top: 55px
+
+				&:nth-child(2)
+					left: 30%
+					top: 65px
+
+				&:nth-child(3)
+					left: 50%
+					top: 130px
+
+				&:nth-child(4)
+					left: 70%
+					top: 65px
+
+				&:nth-child(5)
+					left: 90%
+					top: 55px
 
 	.opened
 		&__item
@@ -359,6 +438,56 @@
 
 
 @media only screen and (max-width : 480px)
+	.field
+		&__container
+			padding-top: 25px
+
+		&__item
+			width: 65px
+			height: 105px
+
+			&::before
+				width: 77px
+				height: 14px
+
+			&--top
+				&:nth-child(1)
+					left: 26%
+
+				&:nth-child(3)
+					left: 74%
+
+			&--center
+				&:nth-child(1)
+					left: 14%
+					top: 30px
+
+				&:nth-child(2)
+					top: 35px
+
+				&:nth-child(3)
+					left: 86%
+					top: 30px
+
+			&--bottom
+				&:nth-child(1)
+					top: 20px
+
+				&:nth-child(2)
+					left: 35%
+					top: 40px
+
+				&:nth-child(3)
+					left: 50%
+					top: 150px
+
+				&:nth-child(4)
+					left: 65%
+					top: 40px
+
+				&:nth-child(5)
+					top: 20px
+
 	.opened
 		&__item
 			width: 100%
