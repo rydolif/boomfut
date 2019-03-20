@@ -2,6 +2,19 @@
 @import "base"
 
 
+.icon-viber:before
+	content: "\e902"
+	color: $dark
+
+.icon-facebook2:before
+	content: "\ea91"
+	color: $dark
+
+.icon-instagram:before
+	content: "\ea92"
+	color: $dark
+
+
 .header
 	position: fixed
 	top: 0
@@ -98,19 +111,24 @@
 		width: 80px
 		height: 80px
 		transition: all .6s
+		box-shadow: 0 0 15px 0 rgba($dark, .15)
+		overflow: hidden
+		border-radius: 8px
 		
 		&:hover,
 		&:focus
-			background: rgba(#fff, .15)
+			background: rgba(#fafafa, .35)
+			box-shadow: 0 0 15px 0 rgba(#888, .55)
 
-		img
+		img,
+		span
 			position: absolute
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
-			width: 35px
-			height: 35px
-
+			max-width: 35px
+			max-height: 35px
+			font-size: 40px
 
 .main
 	background-image: url(../img/bg.png)
