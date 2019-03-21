@@ -37,6 +37,9 @@
 
 
 @media only screen and (max-width : 992px)
+	.modal--item
+		padding: 30px
+
 	.field
 		&__item
 
@@ -238,6 +241,24 @@
 
 
 @media only screen and (max-width : 767px)
+	.modal--item
+		.packs__next,
+		.packs__prev
+			top: 50px
+			transform: translate(0, 0)
+
+		&__search
+			margin-bottom: 45px
+
+			input
+				width: 100%
+
+			button
+				right: 25px
+
+		&__slide
+			margin-top: 20px !important
+
 	.field
 		padding-bottom: 50px
 		background-position: 49% center

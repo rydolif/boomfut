@@ -5,6 +5,7 @@
 	height: auto
 	background-color: #fff
 	z-index: 1
+	margin: 30px 0
 
 	&__header
 		background: $dark
@@ -54,20 +55,15 @@
 			b
 				font-weight: 500
 
-	.btn
-		width: 100%
-		padding: 18px 0
-		font-size: 12px
-
 	.close
 		position: absolute
-		right: 15px
-		top: 15px
+		right: 5px
+		top: 5px
 		display: block
-		width: 30px
-		height: 30px
-		box-shadow: 0 0 8px rgba(0, 0, 0, 0.33)
-		background-color: $dark
+		width: 26px
+		height: 26px
+		box-shadow: 0 -3px 5px rgba(14, 32, 77, 0.21)
+		background: rgba(#fff, .14)
 		border-radius: 50%
 		cursor: pointer
 		z-index: 1
@@ -97,4 +93,64 @@
 
 		&::after
 			transform: translate(-50%, -50%) rotate(-45deg)
+
+	&--item
+		background: rgba(#fff, .45)
+		padding: 40px 70px
+		max-width: 1170px
+
+		&__slide
+			padding: 0 !important
+			margin-top: 40px !important
+			text-align: center
+
+			img
+				margin-bottom: 10px
+
+
+		&__search
+			position: relative
+			height: 40px
+
+			button
+				position: absolute
+				right: 18%
+				top: 50%
+				transform: translate(0, -50%)
+				width: 25px
+				height: 25px
+				z-index: 1
+				border: none
+				background-color: transparent
+
+
+				&::before
+					content: ''
+					transform: translate(0, -50%)
+					position: absolute
+					background-image: url(../img/search.png)
+					background-size: cover
+					background-position: center
+					width: 25px
+					height: 25px
+
+
+			input
+				background: rgba(#fff, .4)
+				color: #fff
+				font-size: 16px
+				font-weight: 500
+				width: 85%
+
+				&::placeholder
+					color: #fff
+					font-size: 16px
+					font-weight: 500
+
+		.packs__next,
+		.packs__prev
+			top: 50%
+			transform: translate(0, -50%)
+			z-index: 1
+
 

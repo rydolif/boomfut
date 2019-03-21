@@ -4,10 +4,12 @@
 	padding: 100px 0
 	
 	&__list
+		position: relative
 		background-color: rgba(#fff, .22)
 		margin-bottom: 40px
 		padding: 15px 20px
 		color: $dark
+		z-index: 1
 
 		&_header
 			display: flex
@@ -20,10 +22,48 @@
 				margin-left: 30px
 
 		&_line
-			&:nth-child(even)
-				background-color: #fff
-				opacity: 0.3
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 5px 15px
+			line-height: 1
+			font-size: 16px
+			font-weight: 500
 
+			span
+				max-width: 80%
+
+			&:nth-child(even)
+				background: rgba(#fff, .3)
+
+		&_check
+			position: relative
+			width: 20px
+			height: 20px
+			border: 1px solid #fff
+			border-radius: 50%
+
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 12px
+				height: 12px
+				border-radius: 50%
+				background-color: #78d500
+				opacity: 0
+				transition: all .6s
+
+			&--active
+				&::before
+					opacity: 1
+
+		.btn
+			position: absolute
+			bottom: -75px
+			right: 0
 
 	&__container
 		position: relative
@@ -40,6 +80,14 @@
 		width: 110px
 		height: 175px
 		z-index: 1
+		background-image: url(../img/field.png)
+		background-size: cover
+		background-position: center
+		transition: all .6s
+
+		&:hover,
+		&:focus
+			background-image: url(../img/field-focus.png)
 
 		&::before
 			content: ''
