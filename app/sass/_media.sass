@@ -1,5 +1,13 @@
 
 @media only screen and (max-width : 1200px)
+	.main__block
+		.points__item
+
+			b,
+			span
+				opacity: 1
+
+
 	.currency__content
 		padding: 25px
 
@@ -470,6 +478,10 @@
 
 
 @media only screen and (max-width : 576px)
+	.main
+		h2
+			font-size: 24px
+
 	.currency__wrap_modal div
 		flex-wrap: wrap
 
@@ -556,6 +568,19 @@
 
 
 @media only screen and (max-width : 480px)
+	.main
+		&__block
+			padding-top: 45px
+			
+			&_header
+				flex-wrap: wrap
+				justify-content: space-around
+
+			h2
+				padding: 0 10px
+				margin: 0 0 10px 0
+
+
 	.currency
 		&__wrap
 			&_header

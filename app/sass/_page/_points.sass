@@ -84,3 +84,36 @@
 			&::before,
 			&::after
 				opacity: 1
+				
+	&__next,
+	&__prev
+		top: 30px
+		width: 30px
+		height: 30px
+		border: 1px solid #fff
+		background: none
+		margin-top: 0
+		transition: all .6s
+
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			width: 10px
+			height: 10px
+			border-top: 2px solid #fff
+			border-left: 2px solid #fff
+
+	&__next
+		right: 15px
+
+		&::before
+			transform: translate(-75%, -50%) rotate(135deg)
+
+	&__prev
+		right: 55px
+		left: auto
+
+		&::before
+			transform: translate(-25%, -50%) rotate(-45deg)

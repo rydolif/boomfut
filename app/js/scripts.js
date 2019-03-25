@@ -867,7 +867,22 @@
 
 $(function() {
 
-//-------------------------------попандер---------------------------------------
+
+//-------------------------------tabs-index--------------------------------------
+  $('.currency__wrap_table').hide();
+  $('.currency__wrap_table:first').show();
+  $('.main__block_header a:first').addClass('active');
+   $('.main__block_header a').click(function(event){
+    event.preventDefault();
+    $('.main__block_header a').removeClass('active');
+    $(this).addClass('active');
+    $('.currency__wrap_table').hide();
+     var selectTab = $(this).attr('href');
+    $(selectTab).fadeIn();
+  });
+
+
+//-------------------------------tabs-currency--------------------------------------
   $('.currency__wrap').hide();
   $('.currency__wrap:first').show();
   $('.currency ul a:first').addClass('active');
@@ -884,6 +899,55 @@ $(function() {
 //-------------------------------попандер---------------------------------------
   $('.modal').popup({transition: 'all 0.3s'});
 
+
+
+//-----------------------------index-parks---------------------------
+  var swiper = new Swiper('.main__points_slider', {
+    slidesPerView: 4,
+    arrow: false,
+    navigation: {
+      nextEl: '.points__next',
+      prevEl: '.points__prev',
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 3,
+      }
+    }
+  });
+
+
+//-----------------------------index-parks---------------------------
+  var swiper = new Swiper('.main__slider', {
+    slidesPerView: 4,
+    navigation: {
+      nextEl: '.packs__next',
+      prevEl: '.packs__prev',
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 3,
+      }
+    }
+  });
 
 //------------------------------parks---------------------------
   var swiper = new Swiper('.packs__slider', {
