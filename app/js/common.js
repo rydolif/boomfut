@@ -1,6 +1,20 @@
 $(function() {
 
 //-------------------------------попандер---------------------------------------
+  $('.currency__wrap').hide();
+  $('.currency__wrap:first').show();
+  $('.currency ul a:first').addClass('active');
+   $('.currency ul a').click(function(event){
+    event.preventDefault();
+    $('.currency ul a').removeClass('active');
+    $(this).addClass('active');
+    $('.currency__wrap').hide();
+     var selectTab = $(this).attr('href');
+    $(selectTab).fadeIn();
+  });
+
+
+//-------------------------------попандер---------------------------------------
   $('.modal').popup({transition: 'all 0.3s'});
 
 
@@ -26,6 +40,30 @@ $(function() {
       }
     }
   });
+
+//------------------------------sbc---------------------------
+  var swiper = new Swiper('.sbc__slider', {
+    slidesPerView: 4,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // when window width is <= 320px
+      480: {
+        slidesPerView: 1,
+      },
+      // when window width is <= 480px
+      767: {
+        slidesPerView: 2,
+      },
+      // when window width is <= 640px
+      992: {
+        slidesPerView: 3,
+      }
+    }
+  });
+
 
 //------------------------------acardeon---------------------------
   $(".faq__item_content").slideUp("slow");

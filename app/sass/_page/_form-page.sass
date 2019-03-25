@@ -1,0 +1,112 @@
+
+.page--form
+	background-image: url(../img/page-form-bg.jpg)
+	padding: 110px 0
+
+	h3
+		text-transform: uppercase
+		color: #fff
+		font-size: 30px
+		text-align: right
+		margin-bottom: 30px
+		font-weight: 500
+
+	p
+		margin-bottom: 25px
+		color: #fff
+		text-align: center
+		line-height: 1
+
+	&__form
+		background-color: rgba(#ffffff, 0.25)
+		padding: 30px
+		box-shadow: 0 0 92px #000080
+
+		&_line
+			position: relative
+			margin-bottom: 20px
+
+			&--last
+				margin-bottom: 40px
+
+		&_btn
+			display: flex
+			justify-content: space-between
+			margin-bottom: 30px
+
+			a
+				width: 45%
+
+		&_link
+			display: flex
+			justify-content: space-between
+			align-items: center
+			line-height: 1
+
+			button
+				margin-right: 0
+
+			a
+				position: relative
+				color: $dark
+				z-index: 1
+
+				&::before
+					content: ''
+					width: 0
+					transform: scale(0)
+					transition: all .3s
+					position: absolute
+					bottom: 0
+					width: 100%
+					height: 1px
+					background-color: $dark
+					z-index: -1
+
+				&:hover,
+				&:focus
+					color: $dark
+					text-decoration: none
+
+					&::before
+						transform: scale(1)
+
+
+		label
+			position: relative
+			padding-left: 25px
+			color: $dark
+			cursor: pointer
+			margin-bottom: 0
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+
+			&::before
+				width: 15px
+				height: 15px
+				border-radius: 3px
+				border: 1px solid $dark
+
+			&::after
+				width: 9px
+				height: 9px
+				border-radius: 3px
+				border: 1px solid $dark
+				background: $dark
+				left: 3px
+				top: 3px
+				transition: all .6s
+
+		input[type="checkbox"]
+			display: none
+
+		input[type="checkbox"]:checked + label::after
+			transform: scale(1)
+
+		input[type="checkbox"] + label::after
+			transform: scale(0)
+
