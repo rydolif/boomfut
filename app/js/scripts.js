@@ -871,10 +871,10 @@ $(function() {
 //-------------------------------tabs-index--------------------------------------
   $('.currency__wrap_table').hide();
   $('.currency__wrap_table:first').show();
-  $('.main__block_header a:first').addClass('active');
-   $('.main__block_header a').click(function(event){
+  $('.index__block_header a:first').addClass('active');
+   $('.index__block_header a').click(function(event){
     event.preventDefault();
-    $('.main__block_header a').removeClass('active');
+    $('.index__block_header a').removeClass('active');
     $(this).addClass('active');
     $('.currency__wrap_table').hide();
      var selectTab = $(this).attr('href');
@@ -927,7 +927,7 @@ $(function() {
 
 
 //-----------------------------index-parks---------------------------
-  var swiper = new Swiper('.main__slider', {
+  var swiper = new Swiper('.index__slider', {
     slidesPerView: 4,
     navigation: {
       nextEl: '.packs__next',
