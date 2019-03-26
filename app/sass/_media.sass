@@ -306,6 +306,13 @@
 
 
 @media only screen and (max-width : 767px)
+	.header__login
+		&_price
+			margin-right: 10px
+
+		&_call
+			margin-right: 10px
+
 	.currency
 		h2
 			font-size: 24px
@@ -484,6 +491,13 @@
 
 
 @media only screen and (max-width : 576px)
+	.header__login
+		img
+			width: 16px
+
+		&_list
+			font-size: 14px
+
 	.main
 		h2
 			font-size: 24px
@@ -574,6 +588,27 @@
 
 
 @media only screen and (max-width : 480px)
+	.header__login
+		display: none
+
+	.nav__login
+		display: flex
+		margin: 40px
+
+		&_list
+			&:hover,
+			&:focus
+				background: none
+
+				ul
+					display: block
+					background: none
+
+			ul
+				margin: 0
+				display: none
+
+
 	.main
 		&__block
 			padding-top: 45px
