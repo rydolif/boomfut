@@ -1,5 +1,25 @@
 
 @media only screen and (max-width : 1200px)
+	.header
+		&__logo
+			font-size: 24px
+
+		&__lang
+			margin-right: 5px
+
+		&__login
+			&_list
+				font-size: 14px
+
+			&_price
+				margin-right: 5px
+
+			&_call
+				margin-right: 5px
+
+			img
+				width: 17px
+
 	.main__block
 		.points__item
 
@@ -67,6 +87,7 @@
 
 
 @media only screen and (max-width : 992px)
+
 	.currency
 		&__wrap
 			&_header
@@ -249,7 +270,7 @@
 		height: 100%
 		flex-direction: column
 		right: -100%
-		top: 50px
+		top: 45px
 		z-index: -1
 		background: rgba($dark, .95)
 		transition: all .3s
@@ -537,12 +558,9 @@
 			display: none
 
 		&__logo
-			font-size: 30px
 			line-height: 1
 
 	.nav
-		top: 50px
-
 		&__btn
 			display: flex
 			flex-direction: column
