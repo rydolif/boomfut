@@ -902,7 +902,7 @@ $(function() {
 
 
 //-----------------------------index-parks---------------------------
-  var swiper = new Swiper('.main__points_slider', {
+  var swiper = new Swiper('.index__points_slider', {
     slidesPerView: 4,
     arrow: false,
     navigation: {
