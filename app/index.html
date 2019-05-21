@@ -34,8 +34,9 @@
 	</div>
 
 	<header class="header">
-		<div class="header__container">	
+		<div class="header__container container">	
 			<a href="/" class="header__logo logo">
+				<img src="img/logo.png" alt="">
 				<p><b>BOOM</b>FUT</p>
 			</a>
 
@@ -45,60 +46,126 @@
 				</span>
 			</button>
 
-			<nav class="nav">
-				<ul>
-					<li><a href="#">home</a></li>
-					<li><a href="#">play</a></li>
-					<li><a href="#">top players</a></li>
-					<li><a href="#">Contact us</a></li>
-					<li><a href="#">faq</a></li>
-					<li><a href="#">rewievs</a></li>
-				</ul>
+			<div class="header__row">
 
-				<div class="nav__login header__login">
-					<p class="header__login_price"><img src="img/cop.png" alt=""> 100FP</p>
+				<div class="header__login">
+
+					<p class="header__login_price header__login_price--yelow"><img src="img/card1.png" alt=""> 100 FP</p>
+
+					<p class="header__login_price"><img src="img/card2.png" alt=""> 100 FP</p>
+
 					<a href="#" class="header__login_call"><img src="img/call.png" alt=""> <span>1</span></a>
-					<div class="nav__login_list header__login_list">
+
+					<div class="header__login_list">
 						<img src="img/user.png" alt="">
-						<span>username</span>
+						<span>My Account</span>
 						<ul>
-							<li><a href="#">Profile</a></li>
-							<li><a href="#">Price</a></li>
-							<li><a href="#">Logout</a></li>
+							<li><a href="#"><img src="img/header-register.png" alt=""><span>Register</span></a></li>
+							<li><a href="#"><img src="img/header-login.png" alt=""><span>Login</span></a></li>
 						</ul>
 					</div>
-				</div>
-<!-- 				
-				<div class="nav__btn header__btn">
-					<a href="#" class="btn">sing up</a>
-					<a href="#" class="btn">login</a>
-				</div> -->
-			</nav>
-<!-- 
-			<div class="header__btn">
-				<a href="#" class="btn">sing up</a>
-				<a href="#" class="btn">login</a>
-			</div> -->
 
-			<div class="header__login">
-				<div class="header__lang header__login_list">
-					<span>RU</span>
-					<ul>
-						<li><a href="#">EN</a></li>
-						<li><a href="#">PL</a></li>
-					</ul>
+					<div class="header__login_list header__login_list--money">
+						<span>$</span>
+						<ul>
+							<li><a href="#"><span>$</span><span>USD</span></a></li>
+							<li><a href="#"><span>€</span><span>EUR</span></a></li>
+							<li><a href="#"><span>£</span><span>GPB</span></a></li>
+							<li><a href="#"><span>R$</span><span>BRL</span></a></li>
+							<li><a href="#"><span>C$</span><span>CAD</span></a></li>
+							<li><a href="#"><span>$</span><span>AUD</span></a></li>
+							<li><a href="#"><span>zł</span><span>PLN</span></a></li>
+							<li><a href="#"><span>₺</span><span>UTL</span></a></li>
+							<li><a href="#"><span>₽</span><span>RUB</span></a></li>
+							<li><a href="#"><span>SR</span><span>SAR</span></a></li>
+							<li><a href="#"><span>QR</span><span>QAR</span></a></li>
+						</ul>
+					</div>
+
+					<div class="header__login_list header__login_list--lang">
+						<span><img src="img/en.png" alt=""></span>
+						<ul>
+							<li><a href="#"><img src="img/en.png" alt=""><span>EN</span></a></li>
+							<li><a href="#"><img src="img/DE.png" alt=""><span>DE</span></a></li>
+							<li><a href="#"><img src="img/FR.png" alt=""><span>FR</span></a></li>
+							<li><a href="#"><img src="img/IT.png" alt=""><span>IT</span></a></li>
+							<li><a href="#"><img src="img/NL.png" alt=""><span>NL</span></a></li>
+							<li><a href="#"><img src="img/ES.png" alt=""><span>ES</span></a></li>
+							<li><a href="#"><img src="img/PT.png" alt=""><span>PT</span></a></li>
+							<li><a href="#"><img src="img/PL.png" alt=""><span>PL</span></a></li>
+							<li><a href="#"><img src="img/RU.png" alt=""><span>RU</span></a></li>
+							<li><a href="#"><img src="img/AR.png" alt=""><span>AR</span></a></li>
+							<li><a href="#"><img src="img/TR.png" alt=""><span>TR</span></a></li>
+						</ul>
+					</div>
+					
 				</div>
-				<p class="header__login_price"><img src="img/card2.png" alt=""> 100 FP</p>
-				<a href="#" class="header__login_call"><img src="img/call.png" alt=""> <span>1</span></a>
-				<div class="header__login_list">
-					<img src="img/user.png" alt="">
-					<span>username</span>
+
+				<nav class="nav">
 					<ul>
-						<li><a href="#">Profile</a></li>
-						<li><a href="#">Price</a></li>
-						<li><a href="#">Logout</a></li>
+						<li><a href="#">home</a></li>
+						<li><a href="#">play</a></li>
+						<li><a href="#">top players</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">faq</a></li>
+						<li><a href="#">rewievs</a></li>
 					</ul>
-				</div>
+
+					<div class="nav__login header__login">
+						<div class="nav__login_row">
+							<a href="#" class="header__login_call"><img src="img/call.png" alt=""> <span>1</span></a>
+							<div class="header__login_list">
+								<img src="img/user.png" alt="">
+								<span>My Account</span>
+								<ul>
+									<li><a href="#"><img src="img/header-register.png" alt=""><span>Register</span></a></li>
+									<li><a href="#"><img src="img/header-login.png" alt=""><span>Login</span></a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="nav__login_row">
+							<p class="header__login_price header__login_price--yelow"><img src="img/card1.png" alt=""> 100 FP</p>
+							<p class="header__login_price"><img src="img/card2.png" alt=""> 100 FP</p>
+						</div>
+
+						<div class="nav__login_row">
+							<div class="header__login_list header__login_list--money">
+								<span>$</span>
+								<ul>
+									<li><a href="#"><span>$</span><span>USD</span></a></li>
+									<li><a href="#"><span>€</span><span>EUR</span></a></li>
+									<li><a href="#"><span>£</span><span>GPB</span></a></li>
+									<li><a href="#"><span>R$</span><span>BRL</span></a></li>
+									<li><a href="#"><span>C$</span><span>CAD</span></a></li>
+									<li><a href="#"><span>$</span><span>AUD</span></a></li>
+									<li><a href="#"><span>zł</span><span>PLN</span></a></li>
+									<li><a href="#"><span>₺</span><span>UTL</span></a></li>
+									<li><a href="#"><span>₽</span><span>RUB</span></a></li>
+									<li><a href="#"><span>SR</span><span>SAR</span></a></li>
+									<li><a href="#"><span>QR</span><span>QAR</span></a></li>
+								</ul>
+							</div>
+							<div class="header__login_list header__login_list--lang">
+								<span><img src="img/en.png" alt=""></span>
+								<ul>
+									<li><a href="#"><img src="img/en.png" alt=""><span>EN</span></a></li>
+									<li><a href="#"><img src="img/DE.png" alt=""><span>DE</span></a></li>
+									<li><a href="#"><img src="img/FR.png" alt=""><span>FR</span></a></li>
+									<li><a href="#"><img src="img/IT.png" alt=""><span>IT</span></a></li>
+									<li><a href="#"><img src="img/NL.png" alt=""><span>NL</span></a></li>
+									<li><a href="#"><img src="img/ES.png" alt=""><span>ES</span></a></li>
+									<li><a href="#"><img src="img/PT.png" alt=""><span>PT</span></a></li>
+									<li><a href="#"><img src="img/PL.png" alt=""><span>PL</span></a></li>
+									<li><a href="#"><img src="img/RU.png" alt=""><span>RU</span></a></li>
+									<li><a href="#"><img src="img/AR.png" alt=""><span>AR</span></a></li>
+									<li><a href="#"><img src="img/TR.png" alt=""><span>TR</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+
 			</div>
 
 		</div>
@@ -479,33 +546,38 @@
 	</main>
 
 	<footer class="footer">
-		<div class="footer__container">
+		<div class="footer__container container">
 			
 			<div class="footer__col">
 				<a href="/" class="footer__logo logo">
-					<p><b>BOOM</b>FUT</p>
+					<img src="img/logo.png" alt="">
+					<div>
+						<p><b>BOOM</b>FUT</p>
+						<p class="footer__logo_copy">All Rights reserved, 2019</p>
+					</div>
 				</a>
-				<p>All Rights reserved, 2019</p>
 			</div>
 
-			<div class="footer__col">
-				<a href="#">terms and conditions</a>
-				<a href="#">privacy policy</a>
-			</div>
-
-			<div class="footer__col">
+			<div class="footer__col footer__col--list">
 				<a href="#">Home</a>
 				<a href="#">sell to us</a>
+				<div class="footer__soc">
+					<a href="#" target="_blank"><img src="img/soc1.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/soc2.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/soc3.png" alt=""></a>
+				</div>
 			</div>
 
-			<div class="footer__col">
+			<div class="footer__col footer__col--list">
 				<a href="#">play</a>
 				<a href="#">top players</a>
-			</div>
-			
-			<div class="footer__col">
 				<a href="#">contact us</a>
+			</div>
+
+			<div class="footer__col footer__col--list">
 				<a href="#">faq</a>
+				<a href="#">terms and conditions</a>
+				<a href="#">privacy policy</a>
 			</div>
 			
 			<div class="footer__col">

@@ -10,6 +10,7 @@
 		&__login
 			&_list
 				font-size: 14px
+				margin-right: 20px
 
 			&_price
 				margin-right: 5px
@@ -87,6 +88,18 @@
 
 
 @media only screen and (max-width : 992px)
+	.logo
+		font-size: 24px
+
+		img
+			margin-right: 10px
+			width: 40px
+
+	.header__login_list
+		margin-right: 10px
+
+	.header__login_price
+		font-size: 16px
 
 	.currency
 		&__wrap
@@ -270,17 +283,19 @@
 		height: 100%
 		flex-direction: column
 		right: -100%
-		top: 45px
+		top: 68px
 		z-index: -1
 		background: rgba($dark, .95)
 		transition: all .3s
+		overflow: auto
+		padding-bottom: 50px
 
 		ul
 			display: flex
 			flex-direction: column
 			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
+			margin: 40px
+			text-align: right
 
 		li
 			margin: 0
@@ -327,6 +342,54 @@
 
 
 @media only screen and (max-width : 767px)
+	.footer__soc
+		margin-bottom: 20px
+
+
+	.header__login
+		display: none
+
+
+	.nav__login
+		display: flex
+		flex-direction: column
+		margin: 40px
+
+		&_row
+			display: flex
+			justify-content: flex-end
+			width: 100%
+			margin-bottom: 15px
+
+
+		.header__login_price
+			width: 35%
+
+		.header__login_list
+			&:hover
+				ul
+					display: block
+
+			ul
+				margin: 0 0 90px 0 !important
+				display: none
+				z-index: 11
+
+			a
+				color: #999
+				font-size: 14px
+
+				&::before
+					display: none
+
+				&:hover,
+				&:focus
+					color: #999
+
+		.header__login_price,
+		.header__login_list
+			font-size: 18px
+
 	.currency
 		&__content
 			ul
@@ -611,28 +674,6 @@
 
 
 @media only screen and (max-width : 480px)
-
-	.header__login
-		display: none
-
-	.nav__login
-		display: flex
-		margin: 40px
-
-		&_list
-			&:hover,
-			&:focus
-				background: none
-
-				ul
-					display: block
-					background: none
-
-			ul
-				margin: 0
-				display: none
-
-
 	.main
 		&__block
 			padding-top: 45px
