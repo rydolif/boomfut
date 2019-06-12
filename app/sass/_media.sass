@@ -352,6 +352,13 @@
 
 
 @media only screen and (max-width : 767px)
+	.header__login_list--money,
+	.header__login_list--lang
+		padding: 0
+		height: 30px
+		width: 55px
+
+
 	.footer__soc
 		margin-bottom: 20px
 
@@ -376,7 +383,8 @@
 			width: 35%
 
 		.header__login_list
-			&:hover
+			&:hover,
+			&:focus
 				ul
 					display: block
 
